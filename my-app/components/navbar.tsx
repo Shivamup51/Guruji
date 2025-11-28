@@ -220,7 +220,7 @@ export function Navbar() {
                       {poojaList.map((pooja, index) => (
                         <Link
                           key={index}
-                          href={`/pooja/${pooja.toLowerCase().replace(/\s+/g, "-")}`}
+                          href={`/${pooja.toLowerCase().replace(/\s+/g, "-")}`}
                           className="px-2 py-1 text-sm hover:opacity-80 transition-colors"
                           style={{ color: "#9B251E" }}
                           onClick={() => {

@@ -39,63 +39,63 @@ const services = [
     name: "Kaal Sarp Dosh Puja",
     description: "Remove obstacles caused by Kaal Sarp Dosh and restore peace in life",
     icon: Shield,
-    href: "/pooja/kaal-sarp-dosh-niwaran",
+    href: "/kaal-sarp-dosh-niwaran",
     color: "#9B251E"
   },
   {
     name: "Narayan Nagbali Puja",
     description: "Powerful 3-day ritual to remove Pitru Dosh and ancestral karmic issues",
     icon: Star,
-    href: "/pooja/narayan-nag-bali",
+    href: "/narayan-nag-bali",
     color: "#9B251E"
   },
   {
     name: "Tripindi Shraddh",
     description: "Pacify ancestors and remove Pitru Dosh for family harmony",
     icon: HeartHandshake,
-    href: "/pooja/tripindi",
+    href: "/tripindi",
     color: "#9B251E"
   },
   {
     name: "Pitra Dosh Nivaran Puja",
     description: "Remove ancestral curses and bring blessings from ancestors",
     icon: Users,
-    href: "/pooja/pitar-dosh-shanti",
+    href: "/pitar-dosh-shanti",
     color: "#9B251E"
   },
   {
     name: "Mahamrityunjay Jaap",
     description: "Powerful healing mantra for health, protection, and longevity",
     icon: Activity,
-    href: "/pooja/mahamrutunjay-jaap",
+    href: "/mahamrutunjay-jaap",
     color: "#9B251E"
   },
   {
     name: "Grah Shanti Puja",
     description: "Balance planetary energies and reduce negative planetary effects",
     icon: Moon,
-    href: "/pooja/grah-shanti",
+    href: "/grah-shanti",
     color: "#9B251E"
   },
   {
     name: "Yog Shanti Puja",
     description: "Neutralize harmful yogs and restore balance in your kundli",
     icon: ScrollText,
-    href: "/pooja/yog-shanti",
+    href: "/yog-shanti",
     color: "#9B251E"
   },
   {
     name: "Nakshatra Shanti",
     description: "Calm your birth star and remove negative Nakshatra effects",
     icon: Star,
-    href: "/pooja/nakshatra-shanti",
+    href: "/nakshatra-shanti",
     color: "#9B251E"
   },
   {
     name: "Vastu Shanti Puja",
     description: "Remove negative energies from your home, office, or property",
     icon: Home,
-    href: "/pooja/vastu-shanti",
+    href: "/vastu-shanti",
     color: "#9B251E"
   },
 ]
