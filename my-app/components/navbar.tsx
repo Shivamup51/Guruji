@@ -238,13 +238,13 @@ export function Navbar() {
               {/* WhatsApp Button - Mobile */}
               <div className="px-2 pt-2">
                 <a
-                  href={`https://wa.me/918208780240`}
+                  href={`https://wa.me/917888012103`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full px-4 py-2 rounded-md text-sm font-medium transition-colors bg-green-500 hover:bg-green-600 text-white"
                 >
                   <MessageCircle className="h-5 w-5" />
-                  WhatsApp: 8208780240
+                  WhatsApp: 7888012103
                 </a>
               </div>
             </div>

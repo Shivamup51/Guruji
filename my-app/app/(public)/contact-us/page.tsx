@@ -48,6 +48,7 @@ export default function ContactUs() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6" style={{ color: "#9B251E" }}>
               Get in Touch with Us
+              <span className="block text-3xl sm:text-4xl lg:text-5xl mt-4">संपर्क करें</span>
             </h1>
             <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: "#9B251E", opacity: 0.9 }}>
               Connect with Acharya Kartike Guru Ji for authentic Vedic puja services at Trimbakeshwar. We're here to guide you on your spiritual journey.
@@ -76,11 +77,11 @@ export default function ContactUs() {
                   Call us directly
                 </p>
                 <a 
-                  href="tel:+918208780240" 
+                  href="tel:+917888012103" 
                   className="text-lg font-semibold hover:opacity-80 transition-opacity"
                   style={{ color: "#9B251E" }}
                 >
-                  +91 8208780240
+                  +91 7888012103
                 </a>
               </CardContent>
             </Card>
@@ -101,7 +102,7 @@ export default function ContactUs() {
                   Message us on WhatsApp
                 </p>
                 <a 
-                  href="https://wa.me/918208780240" 
+                  href="https://wa.me/917888012103" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-lg font-semibold hover:opacity-80 transition-opacity"
@@ -261,7 +262,7 @@ export default function ContactUs() {
                     variant="outline"
                     className="text-lg px-8 py-6 border-2"
                     style={{ borderColor: "#9B251E", color: "#9B251E" }}
-                    onClick={() => window.open("https://wa.me/918208780240", "_blank")}
+                    onClick={() => window.open("https://wa.me/917888012103", "_blank")}
                   >
                     <MessageCircle className="h-5 w-5 mr-2" />
                     WhatsApp Instead
@@ -289,7 +290,7 @@ export default function ContactUs() {
               size="lg"
               className="text-lg px-8 py-6"
               style={{ backgroundColor: "#FBDCAB", color: "#9B251E" }}
-              onClick={() => window.open("tel:+918208780240")}
+              onClick={() => window.open("tel:+917888012103")}
             >
               <Phone className="h-5 w-5 mr-2" />
               Call Now
@@ -298,7 +299,7 @@ export default function ContactUs() {
               size="lg"
               className="text-lg px-8 py-6"
               style={{ backgroundColor: "#25D366", color: "#fff" }}
-              onClick={() => window.open("https://wa.me/918208780240", "_blank")}
+              onClick={() => window.open("https://wa.me/917888012103", "_blank")}
             >
               <MessageCircle className="h-5 w-5 mr-2" />
               WhatsApp Us
