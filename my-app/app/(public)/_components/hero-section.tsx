@@ -29,7 +29,7 @@ const heroSlides = [
     subtitle: "Pitru Dosh Shanti",
     description: "पूर्वजों की कृपा से समृद्धि और खुशहाली",
     descriptionEn: "Prosperity and Happiness Through Ancestral Blessings",
-    image: "/pitar-dosh.jpg",
+    image: "/pitar-dosh.png",
     ctaText: "पूजा करवाएं",
     ctaTextEn: "Perform Puja"
   },
