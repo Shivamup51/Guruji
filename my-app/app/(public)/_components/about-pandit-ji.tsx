@@ -12,7 +12,7 @@ export default function AboutPanditJi() {
           {/* Image Section */}
           <div className="relative h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
             <Image
-              src="/pooja1.png"
+              src="/pandit-ji.jpg"
               alt="Pandit Kartike Guru Ji Trimbakeshwar"
               fill
               className="object-cover"
