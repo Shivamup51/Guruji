@@ -11,7 +11,7 @@ const heroSlides = [
     subtitle: "Peace Through Lord Shiva's Blessings",
     description: "Trimbakeshwar में प्रामाणिक वैदिक पूजा सेवाएं",
     descriptionEn: "Authentic Vedic Puja Services at Trimbakeshwar",
-    image: "/trimbakeshwar.jpg",
+    image: "/pooja2.png",
     ctaText: "पूजा बुक करें",
     ctaTextEn: "Book Puja Now"
   },

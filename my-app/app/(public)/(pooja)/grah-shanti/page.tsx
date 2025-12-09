@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   HomeSection,
@@ -8,7 +8,7 @@ import {
   TypesSection,
   WhyChooseSection,
   TestimonialsSection,
-} from "@/components/pooja-sections"
+} from "@/components/pooja-sections";
 import {
   Heart,
   TrendingUp,
@@ -20,15 +20,20 @@ import {
   BookOpen,
   Clock,
   Sparkles,
-} from "lucide-react"
-import type { Effect, WhyChooseItem, Testimonial, TypeItem } from "@/components/pooja-sections"
+} from "lucide-react";
+import type {
+  Effect,
+  WhyChooseItem,
+  Testimonial,
+  TypeItem,
+} from "@/components/pooja-sections";
 
 const mantras = [
   "ॐ ऐं ह्रीं क्लीं चामुण्डायै विच्चे",
   "ॐ ग्रहाणां शान्ति-कारणाय नमः",
   "ॐ नवग्रह देवताभ्यो नमः",
   "ॐ नमः शिवाय",
-]
+];
 
 const effects: Effect[] = [
   {
@@ -65,46 +70,48 @@ const effects: Effect[] = [
       "Especially helpful for: Shani Sade Sati / Dhaiyya, Rahu & Ketu Dosh, Manglik Dosh, Sun/Moon affliction, Guru Chandal Dosh",
     ],
   },
-]
+];
 
 const types: TypeItem[] = [
   {
     name: "Navgrah Shanti Puja",
     description: "For overall planetary balance and life stability.",
-    image: "/grah-shanti.jpg",
+    image: "/grah-shanti-1.png",
     icon: "🪐",
   },
   {
     name: "Shani Shanti Puja",
-    description: "Recommended during Sade Sati, Dhaiyya, or Saturn malefic effects.",
-    image: "/grah-shanti.jpg",
+    description:
+      "Recommended during Sade Sati, Dhaiyya, or Saturn malefic effects.",
+    image: "/grah-shanti-1.png",
     icon: "🪐",
   },
   {
     name: "Rahu–Ketu Shanti Puja",
     description: "For removing confusion, fear, delays, and sudden losses.",
-    image: "/grah-shanti.jpg",
+    image: "/grah-shanti-1.png",
     icon: "🌙",
   },
   {
     name: "Mangal Dosh Shanti",
-    description: "For marriage problems, anger issues, and relationship imbalance.",
-    image: "/grah-shanti.jpg",
+    description:
+      "For marriage problems, anger issues, and relationship imbalance.",
+    image: "/grah-shanti-1.png",
     icon: "🔥",
   },
   {
     name: "Guru Chandal Dosh Puja",
     description: "For improving career, education, and stability.",
-    image: "/grah-shanti.jpg",
+    image: "/grah-shanti-1.png",
     icon: "⭐",
   },
   {
     name: "Surya & Chandra Shanti Puja",
     description: "For confidence, emotional balance, and mental peace.",
-    image: "/grah-shanti.jpg",
+    image: "/grah-shanti-1.png",
     icon: "☀️",
   },
-]
+];
 
 const whyChoose: WhyChooseItem[] = [
   {
@@ -120,12 +127,14 @@ const whyChoose: WhyChooseItem[] = [
   {
     icon: BookOpen,
     title: "Accurate Rituals",
-    description: "Performed with proper mantras, samagri, and Vedic procedures.",
+    description:
+      "Performed with proper mantras, samagri, and Vedic procedures.",
   },
   {
     icon: Sparkles,
     title: "Personal Horoscope Analysis",
-    description: "Guru Ji checks kundli before recommending the right Shanti Puja.",
+    description:
+      "Guru Ji checks kundli before recommending the right Shanti Puja.",
   },
   {
     icon: TrendingUp,
@@ -137,7 +146,7 @@ const whyChoose: WhyChooseItem[] = [
     title: "Online/Offline Puja Booking",
     description: "Join from anywhere with video darshan option.",
   },
-]
+];
 
 const testimonials: Testimonial[] = [
   {
@@ -158,7 +167,7 @@ const testimonials: Testimonial[] = [
     rating: 5,
     text: "I was facing delays in marriage. Guru Ji performed Mangal Dosh Puja, and things improved quickly.",
   },
-]
+];
 
 export default function GrahShanti() {
   return (
@@ -171,12 +180,12 @@ export default function GrahShanti() {
           "At Trimbakeshwar Jyotirlinga, Grah Shanti Puja is performed with high spiritual energy, making it extremely effective.",
           "Acharya Kartike Guru Ji is a respected and experienced Vedic priest who performs Navgrah Shanti Puja, Rahu–Ketu Shanti, Shani Shanti, and Manglik Dosh Nivaran with complete Vedic vidhi.",
         ]}
-        imageSrc="/grah-shanti.jpg"
+        imageSrc="/grah.png"
         imageAlt="Grah Shanti Puja in Trimbakeshwar"
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <MarqueeSection
         items={mantras}
         icon={Flame}
@@ -184,7 +193,7 @@ export default function GrahShanti() {
         backgroundColor="#9B251E"
         textColor="#FBDCAB"
       />
-      
+
       <IntroSection
         imageSrc="/grah-shanti.jpg"
         imageAlt="Grah Shanti Puja"
@@ -199,7 +208,7 @@ export default function GrahShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <EffectsSection
         title="Effects – Benefits of Grah Shanti Puja"
         subtitle="This puja brings major relief in life by calming negative planetary energies."
@@ -208,7 +217,7 @@ export default function GrahShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TypesSection
         title="Types of Grah Shanti Puja"
         subtitle="Short & Easy Listing"
@@ -218,7 +227,7 @@ export default function GrahShanti() {
         textColor="#FBDCAB"
         accentColor="#FBDCAB"
       />
-      
+
       <WhyChooseSection
         title="Why Choose Acharya Kartike Guru Ji?"
         subtitle="Your Trusted Vedic Priest for Grah Shanti Puja"
@@ -228,7 +237,7 @@ export default function GrahShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TestimonialsSection
         title="Testimonials – Devotees' Experiences"
         subtitle="Real experiences from devotees who have benefited from Grah Shanti Puja"
@@ -238,5 +247,5 @@ export default function GrahShanti() {
         accentColor="#FBDCAB"
       />
     </div>
-  )
+  );
 }

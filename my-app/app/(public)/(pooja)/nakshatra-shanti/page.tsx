@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   HomeSection,
@@ -8,7 +8,7 @@ import {
   TypesSection,
   WhyChooseSection,
   TestimonialsSection,
-} from "@/components/pooja-sections"
+} from "@/components/pooja-sections";
 import {
   Brain,
   TrendingUp,
@@ -21,15 +21,20 @@ import {
   BookOpen,
   Clock,
   UserCheck,
-} from "lucide-react"
-import type { Effect, WhyChooseItem, Testimonial, TypeItem } from "@/components/pooja-sections"
+} from "lucide-react";
+import type {
+  Effect,
+  WhyChooseItem,
+  Testimonial,
+  TypeItem,
+} from "@/components/pooja-sections";
 
 const mantras = [
   "ॐ नक्षत्रदेवताभ्यो नमः",
   "ॐ शान्तिः शान्तिः शान्तिः",
   "ॐ नमः शिवाय",
   "ॐ आदित्याय नमः",
-]
+];
 
 const effects: Effect[] = [
   {
@@ -74,52 +79,59 @@ const effects: Effect[] = [
       "Enhances inner strength and meditation power",
     ],
   },
-]
+];
 
 const types: TypeItem[] = [
   {
     name: "Ashwini, Bharani, Krittika, Rohini, Mrigashira",
-    description: "First five Nakshatras - Each has its own deity and specific mantras for shanti puja.",
-    image: "/nakshatra-shanti.jpg",
+    description:
+      "First five Nakshatras - Each has its own deity and specific mantras for shanti puja.",
+    image: "/nakshatra.jpg",
     icon: "⭐",
   },
   {
     name: "Ardra, Punarvasu, Pushya, Ashlesha, Magha",
-    description: "Next five Nakshatras - Performed with accurate Vedic rituals for each birth star.",
-    image: "/nakshatra-shanti.jpg",
+    description:
+      "Next five Nakshatras - Performed with accurate Vedic rituals for each birth star.",
+    image: "/nakshatra.jpg",
     icon: "⭐",
   },
   {
     name: "Purva Phalguni, Uttara Phalguni, Hasta, Chitra, Swati",
-    description: "Middle Nakshatras - Each requires specific puja procedures based on ruling deity.",
-    image: "/nakshatra-shanti.jpg",
+    description:
+      "Middle Nakshatras - Each requires specific puja procedures based on ruling deity.",
+    image: "/nakshatra.jpg",
     icon: "⭐",
   },
   {
     name: "Vishakha, Anuradha, Jyeshtha, Mula, Purvashadha",
-    description: "Later Nakshatras - Personalized puja performed after detailed kundli analysis.",
-    image: "/nakshatra-shanti.jpg",
+    description:
+      "Later Nakshatras - Personalized puja performed after detailed kundli analysis.",
+    image: "/nakshatra.jpg",
     icon: "⭐",
   },
   {
     name: "Uttarashadha, Shravana, Dhanishta, Shatabhisha",
-    description: "Advanced Nakshatras - Special rituals for maximum relief and positive results.",
-    image: "/nakshatra-shanti.jpg",
+    description:
+      "Advanced Nakshatras - Special rituals for maximum relief and positive results.",
+    image: "/nakshatra.jpg",
     icon: "⭐",
   },
   {
     name: "Purva Bhadrapada, Uttara Bhadrapada, Revati",
-    description: "Final Nakshatras - Complete shanti puja with all Vedic procedures and mantras.",
-    image: "/nakshatra-shanti.jpg",
+    description:
+      "Final Nakshatras - Complete shanti puja with all Vedic procedures and mantras.",
+    image: "/nakshatra.jpg",
     icon: "⭐",
   },
-]
+];
 
 const whyChoose: WhyChooseItem[] = [
   {
     icon: Award,
     title: "Expert in Nakshatra, Grah & Yog Shanti",
-    description: "20+ years of experience in Vedic rituals and kundli-based remedies.",
+    description:
+      "20+ years of experience in Vedic rituals and kundli-based remedies.",
   },
   {
     icon: CheckCircle2,
@@ -134,7 +146,8 @@ const whyChoose: WhyChooseItem[] = [
   {
     icon: UserCheck,
     title: "Personal Kundli Analysis",
-    description: "Guru Ji checks the birth chart before performing the shanti puja.",
+    description:
+      "Guru Ji checks the birth chart before performing the shanti puja.",
   },
   {
     icon: Sparkles,
@@ -146,7 +159,7 @@ const whyChoose: WhyChooseItem[] = [
     title: "Online / Offline Puja Booking",
     description: "Join via video call or attend in person.",
   },
-]
+];
 
 const testimonials: Testimonial[] = [
   {
@@ -167,7 +180,7 @@ const testimonials: Testimonial[] = [
     rating: 5,
     text: "This puja brought harmony in my family life. Very grateful to Guru Ji.",
   },
-]
+];
 
 export default function NakshatraShanti() {
   return (
@@ -180,12 +193,12 @@ export default function NakshatraShanti() {
           "Nakshatra Shanti Puja is performed to calm the ruling deity of the birth star and remove negative effects.",
           "At Trimbakeshwar Jyotirlinga, this puja becomes highly powerful due to the divine blessings of Lord Shiva. Acharya Kartike Guru Ji is an experienced Trimbakeshwar Pandit who performs this puja with accurate Vedic mantras and rituals for maximum relief and positive results.",
         ]}
-        imageSrc="/nakshatra-shanti.jpg"
+        imageSrc="/nakshatra-shanti.png"
         imageAlt="Nakshatra Shanti Puja in Trimbakeshwar"
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <MarqueeSection
         items={mantras}
         icon={Flame}
@@ -193,9 +206,9 @@ export default function NakshatraShanti() {
         backgroundColor="#9B251E"
         textColor="#FBDCAB"
       />
-      
+
       <IntroSection
-        imageSrc="/nakshatra-shanti.jpg"
+        imageSrc="/nakshatra.png"
         imageAlt="Nakshatra Shanti Puja"
         title="What is Nakshatra Shanti?"
         descriptions={[
@@ -208,7 +221,7 @@ export default function NakshatraShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <EffectsSection
         title="Effects – Benefits of Nakshatra Shanti Puja"
         subtitle="This powerful puja brings relief from negative Nakshatra effects and restores balance"
@@ -217,7 +230,7 @@ export default function NakshatraShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TypesSection
         title="Types Based on Nakshatra"
         subtitle="Nakshatra Shanti Puja is performed based on the devotee's birth star. The 27 Nakshatras include:"
@@ -227,7 +240,7 @@ export default function NakshatraShanti() {
         textColor="#FBDCAB"
         accentColor="#FBDCAB"
       />
-      
+
       <WhyChooseSection
         title="Why Choose Acharya Kartike Guru Ji?"
         subtitle="Your Trusted Specialist for Nakshatra Shanti Puja"
@@ -237,7 +250,7 @@ export default function NakshatraShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TestimonialsSection
         title="Testimonials – Devotees' Experiences"
         subtitle="Real experiences from devotees who have benefited from Nakshatra Shanti Puja"
@@ -247,6 +260,5 @@ export default function NakshatraShanti() {
         accentColor="#FBDCAB"
       />
     </div>
-  )
+  );
 }
-

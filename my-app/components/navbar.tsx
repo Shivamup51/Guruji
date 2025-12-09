@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X, User, ChevronDown, ChevronUp, MessageCircle } from "lucide-react"
 import {
   DropdownMenu,
@@ -43,9 +44,17 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold" style={{ color: "#9B251E" }}>
-                Logo
+            <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <Image
+                src="/logo.png"
+                alt="Shri Trimbakeshwar Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+                priority
+              />
+              <span className="text-xl sm:text-2xl font-bold" style={{ color: "#9B251E" }}>
+                Shri Trimbakeshwar
               </span>
             </Link>
           </div>

@@ -34,18 +34,7 @@ export default function WhyChooseSection({
             <WhyChooseCard key={index} item={item} textColor={textColor} accentColor={accentColor} />
           ))}
         </div>
-        {bottomImageSrc && bottomImageAlt && (
-          <div className="mt-12 text-center">
-            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
-              <Image
-                src={bottomImageSrc}
-                alt={bottomImageAlt}
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        )}
+        
       </div>
     </section>
   )

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   HomeSection,
@@ -8,7 +8,7 @@ import {
   TypesSection,
   WhyChooseSection,
   TestimonialsSection,
-} from "@/components/pooja-sections"
+} from "@/components/pooja-sections";
 import {
   Users,
   TrendingUp,
@@ -21,93 +21,91 @@ import {
   BookOpen,
   Clock,
   UserCheck,
-} from "lucide-react"
-import type { Effect, WhyChooseItem, Testimonial, TypeItem } from "@/components/pooja-sections"
+} from "lucide-react";
+import type {
+  Effect,
+  WhyChooseItem,
+  Testimonial,
+  TypeItem,
+} from "@/components/pooja-sections";
 
 const mantras = [
   "ॐ नारायणाय नमः",
   "ॐ नागदेवताभ्यो नमः",
   "ॐ त्र्यंबकेश्वराय नमः",
   "ॐ नमः शिवाय",
-]
+];
 
 const effects: Effect[] = [
   {
     icon: Users,
     title: "Removal of Pitru Dosh",
-    items: [
-      "Brings peace to ancestors and removes karmic obstacles",
-    ],
+    items: ["Brings peace to ancestors and removes karmic obstacles"],
   },
   {
     icon: TrendingUp,
     title: "Financial & Business Growth",
-    items: [
-      "Stability returns and wealth flow improves",
-    ],
+    items: ["Stability returns and wealth flow improves"],
   },
   {
     icon: Users,
     title: "Family Peace",
-    items: [
-      "Resolves frequent disputes and misunderstandings",
-    ],
+    items: ["Resolves frequent disputes and misunderstandings"],
   },
   {
     icon: Shield,
     title: "Protection from Negative Energies",
-    items: [
-      "Powerful shield against sudden problems & misfortune",
-    ],
+    items: ["Powerful shield against sudden problems & misfortune"],
   },
   {
     icon: TrendingUp,
     title: "Career & Marriage Improvement",
-    items: [
-      "Delays are removed, and progress becomes smoother",
-    ],
+    items: ["Delays are removed, and progress becomes smoother"],
   },
   {
     icon: Sparkles,
     title: "Spiritual Healing",
-    items: [
-      "Brings emotional calmness and reduces hidden fears",
-    ],
+    items: ["Brings emotional calmness and reduces hidden fears"],
   },
-]
+];
 
 const types: TypeItem[] = [
   {
     name: "Narayan Bali",
-    description: "Performed to release the soul of ancestors, remove Pitru Dosh, and resolve unfinished karmas.",
-    image: "/narayan-nag-bali.jpg",
+    description:
+      "Performed to release the soul of ancestors, remove Pitru Dosh, and resolve unfinished karmas.",
+    image: "/nag-bali.png",
     icon: "🙏",
   },
   {
     name: "Nag Bali",
-    description: "Performed to get rid of doshas created by killing snakes and to neutralize negative planetary effects of Rahu–Ketu.",
-    image: "/narayan-nag-bali.jpg",
+    description:
+      "Performed to get rid of doshas created by killing snakes and to neutralize negative planetary effects of Rahu–Ketu.",
+    image: "/nag-bali.png",
     icon: "🐍",
   },
   {
     name: "Pitru Dosh Nivaran Puja",
-    description: "Special ritual to remove ancestral doshas and bring peace to departed souls.",
-    image: "/narayan-nag-bali.jpg",
+    description:
+      "Special ritual to remove ancestral doshas and bring peace to departed souls.",
+    image: "/nag-bali.png",
     icon: "🕉️",
   },
   {
     name: "Kaal Sarp Dosh Nivaran",
-    description: "Powerful remedy for Kaal Sarp Dosh and related planetary afflictions.",
-    image: "/narayan-nag-bali.jpg",
+    description:
+      "Powerful remedy for Kaal Sarp Dosh and related planetary afflictions.",
+    image: "/nag-bali.png",
     icon: "⚡",
   },
   {
     name: "Tripindi Shraddha",
-    description: "Ancestral ritual performed to honor and pacify departed ancestors.",
-    image: "/narayan-nag-bali.jpg",
+    description:
+      "Ancestral ritual performed to honor and pacify departed ancestors.",
+    image: "/nag-bali.png",
     icon: "🕯️",
   },
-]
+];
 
 const whyChoose: WhyChooseItem[] = [
   {
@@ -128,7 +126,8 @@ const whyChoose: WhyChooseItem[] = [
   {
     icon: BookOpen,
     title: "Accurate Performance of the 3-Day Ritual",
-    description: "Complete ritual performed with authentic Vedic methods and proper mantras.",
+    description:
+      "Complete ritual performed with authentic Vedic methods and proper mantras.",
   },
   {
     icon: TrendingUp,
@@ -140,7 +139,7 @@ const whyChoose: WhyChooseItem[] = [
     title: "Complete Guidance for Stay, Food, and Preparation",
     description: "Guru Ji assists with all arrangements for the 3-day ritual.",
   },
-]
+];
 
 const testimonials: Testimonial[] = [
   {
@@ -161,7 +160,7 @@ const testimonials: Testimonial[] = [
     rating: 5,
     text: "Guru Ji's puja vidhi is very accurate. Felt deep spiritual relief.",
   },
-]
+];
 
 export default function NarayanNagBali() {
   return (
@@ -173,12 +172,12 @@ export default function NarayanNagBali() {
           "Narayan Nagbali is one of the most powerful and important rituals performed only at Trimbakeshwar Jyotirlinga. This puja is specially done to remove Pitru Dosh, Kaal Sarp negative effects, accidental death dosha, and ancestral karmic issues.",
           "Acharya Kartike Guru Ji is a highly experienced priest who performs the complete 3-day ritual with authentic Vedic methods.",
         ]}
-        imageSrc="/narayan-nag-bali.jpg"
+        imageSrc="/narayan-nag-bali.png"
         imageAlt="Narayan Nagbali Puja in Trimbakeshwar"
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <MarqueeSection
         items={mantras}
         icon={Flame}
@@ -186,21 +185,19 @@ export default function NarayanNagBali() {
         backgroundColor="#9B251E"
         textColor="#FBDCAB"
       />
-      
+
       <IntroSection
-        imageSrc="/narayan-nag-bali.jpg"
+        imageSrc="/nag.png"
         imageAlt="Narayan Nagbali Puja"
         title="What is Narayan Nagbali Puja?"
-        descriptions={[
-          "Narayan Nagbali Puja is a combination of two rituals:",
-        ]}
+        descriptions={["Narayan Nagbali Puja is a combination of two rituals:"]}
         cardTitle="Narayan Bali & Nag Bali"
         cardContent="Narayan Bali is performed to release the soul of ancestors, remove Pitru Dosh, and resolve unfinished karmas. Nag Bali is performed to get rid of doshas created by killing snakes (intentionally or unintentionally) and to neutralize negative planetary effects of Rahu–Ketu. These rituals help devotees overcome: sudden financial losses, family disputes, delayed marriage, health problems, business failures, recurring obstacles, emotional stress, and unseen negative energies. It is the only puja that directly addresses karmic and ancestral blockages."
         imagePosition="right"
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <EffectsSection
         title="Effects – Benefits of Narayan Nagbali Puja"
         subtitle="This powerful 3-day ritual brings relief from karmic and ancestral doshas"
@@ -209,7 +206,7 @@ export default function NarayanNagBali() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TypesSection
         title="Types / Related Rituals at Trimbakeshwar"
         subtitle="Powerful rituals performed by Acharya Kartike Guru Ji"
@@ -219,7 +216,7 @@ export default function NarayanNagBali() {
         textColor="#FBDCAB"
         accentColor="#FBDCAB"
       />
-      
+
       <WhyChooseSection
         title="Why Choose Acharya Kartike Guru Ji?"
         subtitle="Your Trusted Expert for Narayan Nagbali Puja"
@@ -229,7 +226,7 @@ export default function NarayanNagBali() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TestimonialsSection
         title="Testimonials – Devotees' Experiences"
         subtitle="Real experiences from devotees who have benefited from Narayan Nagbali Puja"
@@ -239,5 +236,5 @@ export default function NarayanNagBali() {
         accentColor="#FBDCAB"
       />
     </div>
-  )
+  );
 }

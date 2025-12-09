@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   HomeSection,
@@ -8,7 +8,7 @@ import {
   TypesSection,
   WhyChooseSection,
   TestimonialsSection,
-} from "@/components/pooja-sections"
+} from "@/components/pooja-sections";
 import {
   Heart,
   Shield,
@@ -20,15 +20,20 @@ import {
   Users,
   BookOpen,
   Star,
-} from "lucide-react"
-import type { Effect, WhyChooseItem, Testimonial, TypeItem } from "@/components/pooja-sections"
+} from "lucide-react";
+import type {
+  Effect,
+  WhyChooseItem,
+  Testimonial,
+  TypeItem,
+} from "@/components/pooja-sections";
 
 const mantras = [
   "ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्। उर्वारुकमिव बन्धनान् मृत्योर्मुक्षीय माऽमृतात्॥",
   "ॐ नमः शिवाय",
   "महामृत्युंजय महामंत्रो नमः शिवाय",
   "त्र्यंबकं यजामहे",
-]
+];
 
 const effects: Effect[] = [
   {
@@ -67,40 +72,44 @@ const effects: Effect[] = [
       "Improves overall well-being and harmony",
     ],
   },
-]
+];
 
 const types: TypeItem[] = [
   {
     name: "108 Times Jaap",
     description: "Ideal for mental peace, clarity, and daily protection.",
-    image: "/mahamrutunjay-jaap.jpg",
+    image: "/maha.png",
     icon: "🕉️",
   },
   {
     name: "11000 Times Jaap (Ekadash Jaap)",
-    description: "Recommended for health recovery, stress relief, and spiritual cleansing.",
-    image: "/mahamrutunjay-jaap.jpg",
+    description:
+      "Recommended for health recovery, stress relief, and spiritual cleansing.",
+    image: "/maha.png",
     icon: "🔥",
   },
   {
     name: "1.25 Lakh Jaap (125,000 Chants)",
-    description: "A powerful anushthan performed for severe problems and long-term healing.",
-    image: "/mahamrutunjay-jaap.jpg",
+    description:
+      "A powerful anushthan performed for severe problems and long-term healing.",
+    image: "/maha.png",
     icon: "⚡",
   },
   {
     name: "Mahamrityunjay Havan",
-    description: "Performed after the jaap to purify the environment and offer gratitude to Lord Shiva.",
-    image: "/mahamrutunjay-jaap.jpg",
+    description:
+      "Performed after the jaap to purify the environment and offer gratitude to Lord Shiva.",
+    image: "/maha.png",
     icon: "🕯️",
   },
-]
+];
 
 const whyChoose: WhyChooseItem[] = [
   {
     icon: Award,
     title: "20+ Years of Experience",
-    description: "Performed thousands of Maha Mrityunjay Jaap & Anushthan successfully.",
+    description:
+      "Performed thousands of Maha Mrityunjay Jaap & Anushthan successfully.",
   },
   {
     icon: CheckCircle2,
@@ -110,24 +119,28 @@ const whyChoose: WhyChooseItem[] = [
   {
     icon: BookOpen,
     title: "Complete Vedic Procedure",
-    description: "Jaap is performed with purity, discipline, and correct pronunciation.",
+    description:
+      "Jaap is performed with purity, discipline, and correct pronunciation.",
   },
   {
     icon: Users,
     title: "Personalized Rituals",
-    description: "Guru Ji suggests the correct jaap count based on your horoscope and medical/emotional condition.",
+    description:
+      "Guru Ji suggests the correct jaap count based on your horoscope and medical/emotional condition.",
   },
   {
     icon: Sparkles,
     title: "Clean, Peaceful Pooja Setup",
-    description: "Sacred environment with all arrangements done by the temple team.",
+    description:
+      "Sacred environment with all arrangements done by the temple team.",
   },
   {
     icon: Clock,
     title: "Online / Offline Booking Available",
-    description: "Devotees can join in person or connect through video for blessings.",
+    description:
+      "Devotees can join in person or connect through video for blessings.",
   },
-]
+];
 
 const testimonials: Testimonial[] = [
   {
@@ -148,7 +161,7 @@ const testimonials: Testimonial[] = [
     rating: 5,
     text: "Guru Ji is very humble and knowledgeable. The jaap helped me overcome anxiety and fear. Highly recommended!",
   },
-]
+];
 
 export default function MahamrutunjayJaap() {
   return (
@@ -157,7 +170,7 @@ export default function MahamrutunjayJaap() {
         badgeText="MAHAMRITYUNJAY JAAP – TRIMBAKESHWAR"
         title="Mahamrityunjay Jaap in Trimbakeshwar"
         descriptions={[
-          "The Mahamrityunjay Mantra, also known as the \"Mrityu Conqueror Mantra\", is one of the most powerful Vedic mantras dedicated to Lord Shiva. This sacred chanting protects devotees from health problems, accidents, negativity, sudden obstacles, and life-threatening situations.",
+          'The Mahamrityunjay Mantra, also known as the "Mrityu Conqueror Mantra", is one of the most powerful Vedic mantras dedicated to Lord Shiva. This sacred chanting protects devotees from health problems, accidents, negativity, sudden obstacles, and life-threatening situations.',
           "Performed at Trimbakeshwar Jyotirlinga, this jaap removes fear, brings healing, enhances longevity, and fills life with peace and divine blessings.",
           "Acharya Kartike Guru Ji is a highly respected and experienced pandit who performs Mahamrityunjay Jaap, Anushthan, and Havan with complete Vedic rituals.",
         ]}
@@ -166,7 +179,7 @@ export default function MahamrutunjayJaap() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <MarqueeSection
         items={mantras}
         icon={Flame}
@@ -174,9 +187,9 @@ export default function MahamrutunjayJaap() {
         backgroundColor="#9B251E"
         textColor="#FBDCAB"
       />
-      
+
       <IntroSection
-        imageSrc="/mahamrutunjay-jaap.jpg"
+        imageSrc="/about-3.png"
         imageAlt="Mahamrityunjay Jaap"
         title="What is Mahamrityunjay Jaap?"
         descriptions={[
@@ -189,7 +202,7 @@ export default function MahamrutunjayJaap() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <EffectsSection
         title="Effects – Benefits of Mahamrityunjay Jaap"
         subtitle="Regular or professional chanting of this mantra brings powerful healing and spiritual protection:"
@@ -198,7 +211,7 @@ export default function MahamrutunjayJaap() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TypesSection
         title="Types of Mahamrityunjay Jaap"
         subtitle="Short & Effective"
@@ -208,7 +221,7 @@ export default function MahamrutunjayJaap() {
         textColor="#FBDCAB"
         accentColor="#FBDCAB"
       />
-      
+
       <WhyChooseSection
         title="Why Choose Acharya Kartike Guru Ji?"
         subtitle="Your Trusted Priest for Mahamrityunjay Jaap"
@@ -218,7 +231,7 @@ export default function MahamrutunjayJaap() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TestimonialsSection
         title="Testimonials – Devotees' Experiences"
         subtitle="Real experiences from devotees who have benefited from Mahamrityunjay Jaap"
@@ -228,6 +241,5 @@ export default function MahamrutunjayJaap() {
         accentColor="#FBDCAB"
       />
     </div>
-  )
+  );
 }
-

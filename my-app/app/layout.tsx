@@ -13,8 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Acharya Kartike Guru Ji",
+  title: "Shri Trimbakeshwar",
   description: "Acharya Kartike Guru Ji is a renowned Vedic astrologer and puja specialist known for his expertise in Kaal Sarp Dosh Nivaran, Narayan Nagbali, Tripindi Shraddh, Pitar Dosh Nivaran, Mahamrityunjay Jaap, Grah Shanti, Yog Shanti, Nakshatra Shanti, Vastu Shanti, Rudrabhishek, and traditional Tarpan, Pind Daan & Shraddh pujas. With over 20 years of experience, he performs authentic Vedic rituals at Trimbakeshwar Jyotirlinga, offering personalized guidance and blessings to devotees across India and worldwide.",
+  icons: {
+    icon: "/favicon.io.png",
+    shortcut: "/favicon.io.png",
+    apple: "/favicon.io.png",
+  },
 };
 
 export default function RootLayout({
