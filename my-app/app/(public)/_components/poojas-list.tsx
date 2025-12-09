@@ -42,7 +42,7 @@ const poojaCategories = [
           "Powerful healing mantra for health, protection, and longevity",
         descriptionHindi:
           "स्वास्थ्य, सुरक्षा और दीर्घायु के लिए शक्तिशाली उपचार मंत्र",
-        image: "/mahamrutunjay-jaap.jpg",
+        image: "/mahamrutunjay-jaap.png",
         href: "/mahamrutunjay-jaap",
         icon: Activity,
       },
@@ -98,7 +98,7 @@ const poojaCategories = [
           "Powerful healing mantra for health, protection, and longevity",
         descriptionHindi:
           "स्वास्थ्य, सुरक्षा और दीर्घायु के लिए शक्तिशाली उपचार मंत्र",
-        image: "/mahamrutunjay-jaap.jpg",
+        image: "/mahamrutunjay-jaap.png",
         href: "/mahamrutunjay-jaap",
         icon: Activity,
       },

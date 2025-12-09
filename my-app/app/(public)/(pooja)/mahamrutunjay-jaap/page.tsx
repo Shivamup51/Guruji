@@ -174,7 +174,7 @@ export default function MahamrutunjayJaap() {
           "Performed at Trimbakeshwar Jyotirlinga, this jaap removes fear, brings healing, enhances longevity, and fills life with peace and divine blessings.",
           "Acharya Kartike Guru Ji is a highly respected and experienced pandit who performs Mahamrityunjay Jaap, Anushthan, and Havan with complete Vedic rituals.",
         ]}
-        imageSrc="/mahamrutunjay-jaap.jpg"
+        imageSrc="/mahamrutunjay-jaap.png"
         imageAlt="Mahamrityunjay Jaap in Trimbakeshwar"
         textColor="#9B251E"
         accentColor="#FBDCAB"
@@ -226,7 +226,7 @@ export default function MahamrutunjayJaap() {
         title="Why Choose Acharya Kartike Guru Ji?"
         subtitle="Your Trusted Priest for Mahamrityunjay Jaap"
         items={whyChoose}
-        bottomImageSrc="/mahamrutunjay-jaap.jpg"
+        bottomImageSrc="/mahamrutunjay-jaap.png"
         bottomImageAlt="Acharya Kartike Guru Ji performing Mahamrityunjay Jaap"
         textColor="#9B251E"
         accentColor="#FBDCAB"
