@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   HomeSection,
@@ -8,7 +8,7 @@ import {
   TypesSection,
   WhyChooseSection,
   TestimonialsSection,
-} from "@/components/pooja-sections"
+} from "@/components/pooja-sections";
 import {
   Users,
   TrendingUp,
@@ -22,112 +22,117 @@ import {
   Clock,
   UserCheck,
   MapPin,
-} from "lucide-react"
-import type { Effect, WhyChooseItem, Testimonial, TypeItem } from "@/components/pooja-sections"
+} from "lucide-react";
+import type {
+  Effect,
+  WhyChooseItem,
+  Testimonial,
+  TypeItem,
+} from "@/components/pooja-sections";
 
 const mantras = [
   "ॐ पितृदेवताभ्यो नमः",
   "ॐ नमो भगवते वासुदेवाय",
   "ॐ त्र्यंबकेश्वराय नमः",
-]
+];
 
 const effects: Effect[] = [
   {
     icon: Users,
     title: "Pitra Dosh Removal",
-    items: [
-      "Removes ancestral curses and karmic blockages",
-    ],
+    items: ["Removes ancestral curses and karmic blockages"],
   },
   {
     icon: Users,
     title: "Family Harmony",
-    items: [
-      "Reduces conflicts and ensures peace at home",
-    ],
+    items: ["Reduces conflicts and ensures peace at home"],
   },
   {
     icon: TrendingUp,
     title: "Career & Financial Improvement",
-    items: [
-      "Obstacles get removed and stability increases",
-    ],
+    items: ["Obstacles get removed and stability increases"],
   },
   {
     icon: Heart,
     title: "Health & Emotional Relief",
-    items: [
-      "Reduces chronic problems and mental stress",
-    ],
+    items: ["Reduces chronic problems and mental stress"],
   },
   {
     icon: Shield,
     title: "Spiritual Protection",
-    items: [
-      "Brings blessings from ancestors and divine guidance",
-    ],
+    items: ["Brings blessings from ancestors and divine guidance"],
   },
-]
+];
 
 const types: TypeItem[] = [
   {
     name: "Tripindi Shraddh for Last Three Generations",
-    description: "Performed for ancestors of the last three generations to remove Pitru Dosh and provide peace to wandering souls.",
-    image: "/tripindi.jpg",
+    description:
+      "Performed for ancestors of the last three generations to remove Pitru Dosh and provide peace to wandering souls.",
+    image: "/pind.png",
     icon: "🙏",
   },
   {
     name: "Tripindi for Unnatural Death",
-    description: "Especially recommended when death occurred unnaturally (accident, suicide, sudden death).",
-    image: "/tripindi.jpg",
+    description:
+      "Especially recommended when death occurred unnaturally (accident, suicide, sudden death).",
+    image: "/pind.png",
     icon: "🕉️",
   },
   {
     name: "Tripindi for Improper Shraddh",
-    description: "When ancestors didn't receive proper shraddh rituals, this ritual brings peace to departed souls.",
-    image: "/tripindi.jpg",
+    description:
+      "When ancestors didn't receive proper shraddh rituals, this ritual brings peace to departed souls.",
+    image: "/pind.png",
     icon: "⚡",
   },
   {
     name: "Tripindi for Repeated Obstacles",
-    description: "When there are repeated life obstacles, Tripindi Shraddh unlocks blessings for the entire family.",
-    image: "/tripindi.jpg",
+    description:
+      "When there are repeated life obstacles, Tripindi Shraddh unlocks blessings for the entire family.",
+    image: "/pind.png",
     icon: "🌟",
   },
-]
+];
 
 const whyChoose: WhyChooseItem[] = [
   {
     icon: MapPin,
     title: "Ancient Vedic Rituals Followed",
-    description: "One of the few authentic places for Tripindi Shraddh with powerful spiritual energy of Jyotirlinga.",
+    description:
+      "One of the few authentic places for Tripindi Shraddh with powerful spiritual energy of Jyotirlinga.",
   },
   {
     icon: Award,
     title: "20+ Years of Experience",
-    description: "Expert in ancestor rituals and karmic shanti with accurate Puranic method.",
+    description:
+      "Expert in ancestor rituals and karmic shanti with accurate Puranic method.",
   },
   {
     icon: CheckCircle2,
     title: "Authorized Trimbakeshwar Pandit",
-    description: "Conducted only by trained, authorized pandits at Trimbakeshwar Jyotirlinga.",
+    description:
+      "Conducted only by trained, authorized pandits at Trimbakeshwar Jyotirlinga.",
   },
   {
     icon: BookOpen,
     title: "Accurate Puranic Method",
-    description: "Performed with complete Vedic mantras and accurate procedures for maximum relief.",
+    description:
+      "Performed with complete Vedic mantras and accurate procedures for maximum relief.",
   },
   {
     icon: UserCheck,
     title: "Personalized Guidance",
-    description: "Guru Ji provides personalized guidance for your family's specific needs.",
+    description:
+      "Guru Ji provides personalized guidance for your family's specific needs.",
   },
   {
     icon: Clock,
     title: "Complete Arrangements",
-    description: "Affordable puja packages with complete arrangements for out-station devotees.",
+    description:
+      "Affordable puja packages with complete arrangements for out-station devotees.",
   },
-]
+];
 
 const testimonials: Testimonial[] = [
   {
@@ -148,7 +153,7 @@ const testimonials: Testimonial[] = [
     rating: 5,
     text: "Tripindi Shraddh brought peace to our ancestors and our family. Highly recommend Guru Ji's services.",
   },
-]
+];
 
 export default function Tripindi() {
   return (
@@ -161,12 +166,12 @@ export default function Tripindi() {
           "Trimbakeshwar Jyotirlinga is one of the only places in India where Tripindi Shraddh is performed as per ancient Puranic traditions.",
           "Acharya Kartike Guru Ji performs this ritual with complete Vedic mantras and accurate procedures for maximum relief.",
         ]}
-        imageSrc="/tripindi.jpg"
+        imageSrc="/tripindi.png"
         imageAlt="Tripindi Shraddh in Trimbakeshwar"
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <MarqueeSection
         items={mantras}
         icon={Flame}
@@ -174,7 +179,7 @@ export default function Tripindi() {
         backgroundColor="#9B251E"
         textColor="#FBDCAB"
       />
-      
+
       <IntroSection
         imageSrc="/tripindi.jpg"
         imageAlt="Tripindi Shraddh"
@@ -188,7 +193,7 @@ export default function Tripindi() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <EffectsSection
         title="Benefits of Tripindi Shraddh"
         subtitle="This powerful ritual brings relief from ancestral doshas and restores family harmony"
@@ -197,7 +202,7 @@ export default function Tripindi() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TypesSection
         title="Types of Tripindi Shraddh"
         subtitle="Performed for different situations and needs"
@@ -207,7 +212,7 @@ export default function Tripindi() {
         textColor="#FBDCAB"
         accentColor="#FBDCAB"
       />
-      
+
       <WhyChooseSection
         title="Why Choose Acharya Kartike Guru Ji?"
         subtitle="Your Trusted Expert for Tripindi Shraddh at Trimbakeshwar"
@@ -217,7 +222,7 @@ export default function Tripindi() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TestimonialsSection
         title="Testimonials – Devotees' Experiences"
         subtitle="Real experiences from devotees who have benefited from Tripindi Shraddh"
@@ -227,5 +232,5 @@ export default function Tripindi() {
         accentColor="#FBDCAB"
       />
     </div>
-  )
+  );
 }

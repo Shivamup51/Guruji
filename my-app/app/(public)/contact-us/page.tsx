@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -17,8 +18,10 @@ import {
   MapPin, 
   Clock,
   Send,
-  Sparkles
+  Sparkles,
+  Loader2
 } from "lucide-react"
+import { sendWhatsAppMessage } from "./actions"
 
 const poojaServices = [
   "Kaal Sarp Dosh Puja",
@@ -36,6 +39,59 @@ const poojaServices = [
 ]
 
 export default function ContactUs() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    poojaService: "",
+    message: ""
+  })
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    try {
+      // Validate required fields
+      if (!formData.name || !formData.phone || !formData.message) {
+        alert("Please fill in all required fields (Name, Phone, and Message)")
+        setIsSubmitting(false)
+        return
+      }
+
+      // Call server action
+      const result = await sendWhatsAppMessage({
+        name: formData.name,
+        phone: formData.phone,
+        poojaService: formData.poojaService || undefined,
+        message: formData.message
+      })
+
+      if (result.success && result.url) {
+        // Open WhatsApp with the message
+        window.open(result.url, "_blank")
+        
+        // Reset form
+        setFormData({
+          name: "",
+          phone: "",
+          poojaService: "",
+          message: ""
+        })
+        
+        // Show success message
+        alert("Opening WhatsApp with your message...")
+      } else {
+        alert(result.message || "Failed to send message. Please try again.")
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      alert("An error occurred. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#FBDCAB" }}>
       {/* Hero Section */}
@@ -166,13 +222,16 @@ export default function ContactUs() {
           
           <Card className="border-2" style={{ borderColor: "#9B251E", backgroundColor: "#FBDCAB" }}>
             <CardContent className="pt-6">
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium" style={{ color: "#9B251E" }}>
                       Your Name *
                     </label>
                     <Input
+                      required
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Enter your name"
                       className="border-2"
                       style={{ borderColor: "#9B251E", backgroundColor: "#fff" }}
@@ -183,8 +242,11 @@ export default function ContactUs() {
                       Phone Number *
                     </label>
                     <Input
+                      required
                       type="tel"
-                      placeholder="Enter your phone number"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      placeholder="Enter your phone number (e.g., +91 9876543210)"
                       className="border-2"
                       style={{ borderColor: "#9B251E", backgroundColor: "#fff" }}
                     />
@@ -192,20 +254,9 @@ export default function ContactUs() {
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium" style={{ color: "#9B251E" }}>
-                    Email Address
-                  </label>
-                  <Input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="border-2"
-                    style={{ borderColor: "#9B251E", backgroundColor: "#fff" }}
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-medium" style={{ color: "#9B251E" }}>
                     Puja Service Interested In
                   </label>
-                  <Select>
+                  <Select value={formData.poojaService} onValueChange={(value) => setFormData({ ...formData, poojaService: value })}>
                     <SelectTrigger 
                       className="w-full h-12 text-base border-2"
                       style={{ 
@@ -240,6 +291,9 @@ export default function ContactUs() {
                     Message *
                   </label>
                   <Textarea
+                    required
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Tell us about your requirements or ask any questions..."
                     rows={5}
                     className="border-2"
@@ -252,9 +306,19 @@ export default function ContactUs() {
                     size="lg"
                     className="text-lg px-8 py-6"
                     style={{ backgroundColor: "#9B251E", color: "#FBDCAB" }}
+                    disabled={isSubmitting}
                   >
-                    <Send className="h-5 w-5 mr-2" />
-                    Send Message
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="h-5 w-5 mr-2 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="h-5 w-5 mr-2" />
+                        Send Message
+                      </>
+                    )}
                   </Button>
                   <Button
                     type="button"

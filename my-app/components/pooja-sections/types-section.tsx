@@ -75,12 +75,12 @@ export default function TypesSection({
           </div>
 
           {/* Image on the right */}
-          <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src={currentType.image}
               alt={currentType.name}
               fill
-              className="object-cover transition-opacity duration-500"
+              className="object-fill transition-opacity duration-500"
               priority={currentIndex === 0}
             />
           </div>

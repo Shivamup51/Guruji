@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   HomeSection,
@@ -8,7 +8,7 @@ import {
   TypesSection,
   WhyChooseSection,
   TestimonialsSection,
-} from "@/components/pooja-sections"
+} from "@/components/pooja-sections";
 import {
   TrendingUp,
   Users,
@@ -21,15 +21,20 @@ import {
   BookOpen,
   Clock,
   UserCheck,
-} from "lucide-react"
-import type { Effect, WhyChooseItem, Testimonial, TypeItem } from "@/components/pooja-sections"
+} from "lucide-react";
+import type {
+  Effect,
+  WhyChooseItem,
+  Testimonial,
+  TypeItem,
+} from "@/components/pooja-sections";
 
 const mantras = [
   "ॐ सर्व दोष शान्ति-कराय नमः",
   "ॐ नमो भगवते रुद्राय",
   "ॐ नमः शिवाय",
   "शिवाय योग-निवारणाय नमः",
-]
+];
 
 const effects: Effect[] = [
   {
@@ -76,46 +81,47 @@ const effects: Effect[] = [
       "Removes karmic obstacles",
     ],
   },
-]
+];
 
 const types: TypeItem[] = [
   {
     name: "General Yog Shanti Puja",
     description: "For overall dosha relief and planetary balance.",
-    image: "/yog-shanti.jpg",
+    image: "/yog.jpg",
     icon: "🕉️",
   },
   {
     name: "Grahan Yog Shanti",
     description: "For problems caused by Sun/Moon affliction with Rahu/Ketu.",
-    image: "/yog-shanti.jpg",
+    image: "/yog.jpg",
     icon: "🌙",
   },
   {
     name: "Angarak Yog Shanti",
-    description: "Performed for Mars + Rahu combination leading to aggression & conflicts.",
-    image: "/yog-shanti.jpg",
+    description:
+      "Performed for Mars + Rahu combination leading to aggression & conflicts.",
+    image: "/yog.jpg",
     icon: "🔥",
   },
   {
     name: "Pitra Yog / Pitra Dosh Shanti",
     description: "For ancestral blessings and removal of obstacles.",
-    image: "/yog-shanti.jpg",
+    image: "/yog.jpg",
     icon: "🙏",
   },
   {
     name: "Guru Chandal Yog Shanti",
     description: "For improving education, wisdom, and career progress.",
-    image: "/yog-shanti.jpg",
+    image: "/yog.jpg",
     icon: "⭐",
   },
   {
     name: "Kaal Dosh Shanti",
     description: "For repeated failures, delays, and bad luck.",
-    image: "/yog-shanti.jpg",
+    image: "/yog.jpg",
     icon: "⏰",
   },
-]
+];
 
 const whyChoose: WhyChooseItem[] = [
   {
@@ -136,19 +142,21 @@ const whyChoose: WhyChooseItem[] = [
   {
     icon: UserCheck,
     title: "Detailed Kundli Analysis",
-    description: "You get personalized puja based on your exact planetary positions.",
+    description:
+      "You get personalized puja based on your exact planetary positions.",
   },
   {
     icon: Sparkles,
     title: "Complete Support",
-    description: "From booking to puja completion, Guru Ji assists at every step.",
+    description:
+      "From booking to puja completion, Guru Ji assists at every step.",
   },
   {
     icon: Clock,
     title: "Online / Offline Options Available",
     description: "Join via video call or attend the puja in person.",
   },
-]
+];
 
 const testimonials: Testimonial[] = [
   {
@@ -169,7 +177,7 @@ const testimonials: Testimonial[] = [
     rating: 5,
     text: "I did Angarak Yog Shanti, and my anger & mental stress significantly reduced.",
   },
-]
+];
 
 export default function YogShanti() {
   return (
@@ -182,12 +190,12 @@ export default function YogShanti() {
           "Trimbakeshwar Jyotirlinga is one of the most spiritually charged places for performing Yog Shanti rituals.",
           "Acharya Kartike Guru Ji, a highly experienced priest, performs the puja with accurate mantras and shastri vidhi, ensuring strong and long-lasting results.",
         ]}
-        imageSrc="/yog-shanti.jpg"
+        imageSrc="/yog.png"
         imageAlt="Yog Shanti Puja in Trimbakeshwar"
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <MarqueeSection
         items={mantras}
         icon={Flame}
@@ -195,9 +203,9 @@ export default function YogShanti() {
         backgroundColor="#9B251E"
         textColor="#FBDCAB"
       />
-      
+
       <IntroSection
-        imageSrc="/yog-shanti.jpg"
+        imageSrc="/yog-1.png"
         imageAlt="Yog Shanti Puja"
         title="What is Yog Shanti Puja?"
         descriptions={[
@@ -209,7 +217,7 @@ export default function YogShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <EffectsSection
         title="Effects – Benefits of Yog Shanti Puja"
         subtitle="This powerful puja brings relief from negative yogs and restores balance in life"
@@ -218,7 +226,7 @@ export default function YogShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TypesSection
         title="Types of Yog Shanti Puja"
         subtitle="Short & Clear"
@@ -228,7 +236,7 @@ export default function YogShanti() {
         textColor="#FBDCAB"
         accentColor="#FBDCAB"
       />
-      
+
       <WhyChooseSection
         title="Why Choose Acharya Kartike Guru Ji?"
         subtitle="Your Trusted Specialist for Yog Shanti Puja"
@@ -238,7 +246,7 @@ export default function YogShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TestimonialsSection
         title="Testimonials – Devotees' Experiences"
         subtitle="Real experiences from devotees who have benefited from Yog Shanti Puja"
@@ -248,5 +256,5 @@ export default function YogShanti() {
         accentColor="#FBDCAB"
       />
     </div>
-  )
+  );
 }

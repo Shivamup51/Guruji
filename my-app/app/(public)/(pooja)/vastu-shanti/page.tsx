@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   HomeSection,
@@ -8,7 +8,7 @@ import {
   TypesSection,
   WhyChooseSection,
   TestimonialsSection,
-} from "@/components/pooja-sections"
+} from "@/components/pooja-sections";
 import {
   Sparkles,
   TrendingUp,
@@ -21,14 +21,19 @@ import {
   BookOpen,
   Clock,
   UserCheck,
-} from "lucide-react"
-import type { Effect, WhyChooseItem, Testimonial, TypeItem } from "@/components/pooja-sections"
+} from "lucide-react";
+import type {
+  Effect,
+  WhyChooseItem,
+  Testimonial,
+  TypeItem,
+} from "@/components/pooja-sections";
 
 const mantras = [
   "ॐ वास्तुपुरुषाय नमः",
   "ॐ नमः शिवाय",
   "ॐ शान्तिः शान्तिः शान्तिः",
-]
+];
 
 const effects: Effect[] = [
   {
@@ -41,23 +46,17 @@ const effects: Effect[] = [
   {
     icon: TrendingUp,
     title: "Financial Stability",
-    items: [
-      "Improves business growth, wealth flow, and success",
-    ],
+    items: ["Improves business growth, wealth flow, and success"],
   },
   {
     icon: Users,
     title: "Family Peace & Harmony",
-    items: [
-      "Reduces conflicts and enhances relationships",
-    ],
+    items: ["Reduces conflicts and enhances relationships"],
   },
   {
     icon: Heart,
     title: "Health Improvements",
-    items: [
-      "Protects residents from stress, illness, and emotional issues",
-    ],
+    items: ["Protects residents from stress, illness, and emotional issues"],
   },
   {
     icon: Shield,
@@ -66,7 +65,7 @@ const effects: Effect[] = [
       "Especially helpful for irregular plots, wrong room placements, or past negative events",
     ],
   },
-]
+];
 
 const types: TypeItem[] = [
   {
@@ -93,7 +92,7 @@ const types: TypeItem[] = [
     image: "/vastu-shanti.jpg",
     icon: "🌳",
   },
-]
+];
 
 const whyChoose: WhyChooseItem[] = [
   {
@@ -114,7 +113,8 @@ const whyChoose: WhyChooseItem[] = [
   {
     icon: UserCheck,
     title: "Personalized Vastu Assessment & Remedies",
-    description: "Guru Ji analyzes your property and suggests the right remedies.",
+    description:
+      "Guru Ji analyzes your property and suggests the right remedies.",
   },
   {
     icon: TrendingUp,
@@ -126,7 +126,7 @@ const whyChoose: WhyChooseItem[] = [
     title: "Online/Offline Puja Options Available",
     description: "Join via video call or attend the puja in person.",
   },
-]
+];
 
 const testimonials: Testimonial[] = [
   {
@@ -147,7 +147,7 @@ const testimonials: Testimonial[] = [
     rating: 5,
     text: "Guru Ji's Vastu Shanti Puja transformed our office space. Business started growing immediately after the ritual.",
   },
-]
+];
 
 export default function VastuShanti() {
   return (
@@ -160,12 +160,12 @@ export default function VastuShanti() {
           "Trimbakeshwar Jyotirlinga is a sacred and powerful place for conducting Vastu Shanti Puja, ensuring long-term harmony and prosperity.",
           "Acharya Kartike Guru Ji performs the puja with complete Vedic rituals for homes, new properties, offices, factories, and commercial spaces.",
         ]}
-        imageSrc="/vastu-shanti.jpg"
+        imageSrc="/vastu.png"
         imageAlt="Vastu Shanti Puja in Trimbakeshwar"
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <MarqueeSection
         items={mantras}
         icon={Flame}
@@ -173,9 +173,9 @@ export default function VastuShanti() {
         backgroundColor="#9B251E"
         textColor="#FBDCAB"
       />
-      
+
       <IntroSection
-        imageSrc="/vastu-shanti.jpg"
+        imageSrc="/vastu-2.png"
         imageAlt="Vastu Shanti Puja"
         title="What is Vastu Shanti Puja?"
         descriptions={[
@@ -188,7 +188,7 @@ export default function VastuShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <EffectsSection
         title="Effects – Benefits of Vastu Shanti Puja"
         subtitle="This powerful puja brings positive energy and removes Vastu doshas from your property"
@@ -197,7 +197,7 @@ export default function VastuShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TypesSection
         title="Types of Vastu Shanti Puja"
         subtitle="Short & Clear"
@@ -207,7 +207,7 @@ export default function VastuShanti() {
         textColor="#FBDCAB"
         accentColor="#FBDCAB"
       />
-      
+
       <WhyChooseSection
         title="Why Choose Acharya Kartike Guru Ji?"
         subtitle="Your Trusted Expert for Vastu Shanti Puja"
@@ -217,7 +217,7 @@ export default function VastuShanti() {
         textColor="#9B251E"
         accentColor="#FBDCAB"
       />
-      
+
       <TestimonialsSection
         title="Testimonials – Devotees' Experiences"
         subtitle="Real experiences from devotees who have benefited from Vastu Shanti Puja"
@@ -227,5 +227,5 @@ export default function VastuShanti() {
         accentColor="#FBDCAB"
       />
     </div>
-  )
+  );
 }

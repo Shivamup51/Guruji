@@ -105,37 +105,37 @@ const whyTrust = [
     name: "20+ Years of Expertise",
     description: "Performed thousands of successful pujas with proven results. With decades of experience, Guru Ji has helped countless devotees overcome life obstacles through authentic Vedic rituals.",
     icon: "🏆",
-    image: "/acharya-kartike-guru-ji.jpg",
+    image: "/vastu-1.png",
   },
   {
     name: "Certified Trimbakeshwar Pandit",
     description: "Authorized priest recognized for authentic Vedic knowledge. Certified by Trimbakeshwar Temple Trust, ensuring all rituals follow traditional and sacred procedures.",
     icon: "✅",
-    image: "/acharya-kartike-guru-ji.jpg",
+    image: "/vastu-1.png",
   },
   {
     name: "Accurate Vidhi",
     description: "Every puja is done as per Puranic and Vedic traditions. Complete adherence to ancient scriptures ensures maximum spiritual benefits and divine blessings.",
     icon: "📖",
-    image: "/acharya-kartike-guru-ji.jpg",
+    image: "/vastu-1.png",
   },
   {
     name: "Personal Guidance & Kundli Analysis",
     description: "Guru Ji provides detailed explanations and remedies for each devotee. Every puja is personalized based on your horoscope and specific needs.",
     icon: "👤",
-    image: "/acharya-kartike-guru-ji.jpg",
+    image: "/vastu-1.png",
   },
   {
     name: "Affordable & Transparent Pricing",
     description: "No hidden charges, complete support throughout your visit. Transparent pricing with affordable packages for all devotees.",
     icon: "💰",
-    image: "/acharya-kartike-guru-ji.jpg",
+    image: "/vastu-1.png",
   },
   {
     name: "Online & Offline Puja Options",
     description: "Attend in person or join via video call. Flexible options to participate in pujas from anywhere in the world.",
     icon: "📱",
-    image: "/acharya-kartike-guru-ji.jpg",
+    image: "/vastu-1.png",
   },
 ]
 
@@ -280,7 +280,7 @@ export default function About() {
             </div>
             <div className="relative h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/acharya-kartike-guru-ji.jpg"
+                src="/pandit-ji.jpg"
                 alt="Acharya Kartike Guru Ji"
                 fill
                 className="object-cover"
