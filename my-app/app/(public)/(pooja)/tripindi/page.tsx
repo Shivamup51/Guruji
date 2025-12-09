@@ -68,7 +68,7 @@ const types: TypeItem[] = [
   {
     name: "Tripindi Shraddh for Last Three Generations",
     description:
-      "Performed for ancestors of the last three generations to remove Pitru Dosh and provide peace to wandering souls.",
+      "Performed for ancestors of the last three generations to remove Pitra Dosh and provide peace to wandering souls.",
     image: "/pind.png",
     icon: "🙏",
   },
@@ -162,7 +162,7 @@ export default function Tripindi() {
         badgeText="TRIPINDI SHRADDH – TRIMBAKESHWAR"
         title="Tripindi Shraddh in Trimbakeshwar"
         descriptions={[
-          "Tripindi Shraddh is a powerful Vedic ritual performed to pacify ancestors whose souls are unsatisfied due to improper rituals, early death, or unfulfilled desires. When ancestral energies are disturbed, it results in Pitru Dosh and repeated obstacles in the family.",
+          "Tripindi Shraddh is a powerful Vedic ritual performed to pacify ancestors whose souls are unsatisfied due to improper rituals, early death, or unfulfilled desires. When ancestral energies are disturbed, it results in Pitra Dosh and repeated obstacles in the family.",
           "Trimbakeshwar Jyotirlinga is one of the only places in India where Tripindi Shraddh is performed as per ancient Puranic traditions.",
           "Acharya Kartike Guru Ji performs this ritual with complete Vedic mantras and accurate procedures for maximum relief.",
         ]}
@@ -188,7 +188,7 @@ export default function Tripindi() {
           "Tripindi Shraddh is performed for ancestors of the last three generations to:",
         ]}
         cardTitle="When is Tripindi Shraddh Recommended?"
-        cardContent="Tripindi is especially recommended when: there is no male member to perform shraddh, death occurred unnaturally (accident, suicide, sudden death), ancestors didn't receive proper shraddh rituals, or there are repeated life obstacles. This ritual brings peace to departed souls and unlocks blessings for the entire family. It helps remove Pitru Dosh, provide peace to wandering or unsatisfied souls, clear karmic blockages, and restore family harmony."
+        cardContent="Tripindi is especially recommended when: there is no male member to perform shraddh, death occurred unnaturally (accident, suicide, sudden death), ancestors didn't receive proper shraddh rituals, or there are repeated life obstacles. This ritual brings peace to departed souls and unlocks blessings for the entire family. It helps remove Pitra Dosh, provide peace to wandering or unsatisfied souls, clear karmic blockages, and restore family harmony."
         imagePosition="right"
         textColor="#9B251E"
         accentColor="#FBDCAB"

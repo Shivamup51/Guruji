@@ -22,21 +22,21 @@ export default function CallToAction() {
           त्र्यंबकेश्वर में प्रामाणिक वैदिक पूजा सेवाओं के लिए पंडित कार्तिके गुरु जी से जुड़ें। पारंपरिक अनुष्ठानों की शक्ति का अनुभव करें और अपने जीवन में शांति पाएं।
         </p>
         
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-8">
           <Button
             size="lg"
-            className="text-lg px-8 py-6 font-semibold"
+            className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 font-semibold"
             style={{ backgroundColor: "#9B251E", color: "#FBDCAB", fontWeight: "600" }}
             onClick={() => window.location.href = "/contact-us"}
           >
-            <span style={{ color: "#FBDCAB" }}>Book Your Puja Now</span>
-            <span className="ml-2 text-sm" style={{ color: "#FBDCAB" }}>अभी पूजा बुक करें</span>
-            <ArrowRight className="ml-2 h-5 w-5" style={{ color: "#FBDCAB" }} />
+            <span className="text-sm sm:text-base" style={{ color: "#FBDCAB" }}>Book Your Puja Now</span>
+            <span className="ml-2 text-xs sm:text-sm" style={{ color: "#FBDCAB" }}>अभी पूजा बुक करें</span>
+            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" style={{ color: "#FBDCAB" }} />
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="text-lg px-8 py-6 border-2 font-semibold"
+            className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 font-semibold"
             style={{ 
               borderColor: "#9B251E", 
               color: "#9B251E", 
@@ -45,13 +45,13 @@ export default function CallToAction() {
             }}
             onClick={() => window.open("tel:+917888012103")}
           >
-            <Phone className="h-5 w-5 mr-2" style={{ color: "#9B251E" }} />
-            <span style={{ color: "#9B251E" }}>Call: +91 7888012103</span>
+            <Phone className="h-4 w-4 sm:h-5 sm:w-5 mr-2" style={{ color: "#9B251E" }} />
+            <span className="text-sm sm:text-base" style={{ color: "#9B251E" }}>Call: +91 7888012103</span>
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="text-lg px-8 py-6 border-2 font-semibold"
+            className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 font-semibold"
             style={{ 
               borderColor: "#9B251E", 
               color: "#9B251E", 
@@ -60,8 +60,8 @@ export default function CallToAction() {
             }}
             onClick={() => window.open("https://wa.me/917888012103", "_blank")}
           >
-            <MessageCircle className="h-5 w-5 mr-2" style={{ color: "#9B251E" }} />
-            <span style={{ color: "#9B251E" }}>WhatsApp Us</span>
+            <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 mr-2" style={{ color: "#9B251E" }} />
+            <span className="text-sm sm:text-base" style={{ color: "#9B251E" }}>WhatsApp Us</span>
           </Button>
         </div>
 

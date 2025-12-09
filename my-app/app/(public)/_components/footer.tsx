@@ -136,17 +136,17 @@ export default function Footer() {
                   <div className="p-2 rounded-lg" style={{ backgroundColor: "#FBDCAB" }}>
                     <MessageCircle className="h-4 w-4" style={{ color: "#9B251E" }} />
                   </div>
-                  <span>WhatsApp</span>
+                  <span>+91 7888012103</span>
                 </a>
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:Panditkartikeygurujitrambakesw@gmail.com"
                   className="flex items-center gap-3 text-sm hover:opacity-80 transition-opacity"
                   style={{ color: "#FBDCAB", opacity: 0.9 }}
                 >
                   <div className="p-2 rounded-lg" style={{ backgroundColor: "#FBDCAB" }}>
                     <Mail className="h-4 w-4" style={{ color: "#9B251E" }} />
                   </div>
-                  <span>Email Us</span>
+                  <span className="break-all">Panditkartikeygurujitrambakesw@gmail.com</span>
                 </a>
                 <div className="flex items-start gap-3 text-sm" style={{ color: "#FBDCAB", opacity: 0.9 }}>
                   <div className="p-2 rounded-lg" style={{ backgroundColor: "#FBDCAB" }}>

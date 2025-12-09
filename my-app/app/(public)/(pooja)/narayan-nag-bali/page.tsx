@@ -39,7 +39,7 @@ const mantras = [
 const effects: Effect[] = [
   {
     icon: Users,
-    title: "Removal of Pitru Dosh",
+    title: "Removal of Pitra Dosh",
     items: ["Brings peace to ancestors and removes karmic obstacles"],
   },
   {
@@ -73,7 +73,7 @@ const types: TypeItem[] = [
   {
     name: "Narayan Bali",
     description:
-      "Performed to release the soul of ancestors, remove Pitru Dosh, and resolve unfinished karmas.",
+      "Performed to release the soul of ancestors, remove Pitra Dosh, and resolve unfinished karmas.",
     image: "/nag-bali.png",
     icon: "🙏",
   },
@@ -85,7 +85,7 @@ const types: TypeItem[] = [
     icon: "🐍",
   },
   {
-    name: "Pitru Dosh Nivaran Puja",
+    name: "Pitra Dosh Nivaran Puja",
     description:
       "Special ritual to remove ancestral doshas and bring peace to departed souls.",
     image: "/nag-bali.png",
@@ -110,7 +110,7 @@ const types: TypeItem[] = [
 const whyChoose: WhyChooseItem[] = [
   {
     icon: Award,
-    title: "Specialized in Narayan Nagbali & Pitru Dosh Puja",
+    title: "Specialized in Narayan Nagbali & Pitra Dosh Puja",
     description: "Expert in performing these complex and powerful rituals.",
   },
   {
@@ -152,7 +152,7 @@ const testimonials: Testimonial[] = [
     name: "Meera S.",
     location: "Delhi",
     rating: 5,
-    text: "We performed this for Pitru Dosh. Our family problems reduced drastically.",
+    text: "We performed this for Pitra Dosh. Our family problems reduced drastically.",
   },
   {
     name: "Sagar N.",
@@ -169,7 +169,7 @@ export default function NarayanNagBali() {
         badgeText="NARAYAN NAGBALI PUJA – TRIMBAKESHWAR"
         title="Narayan Nagbali Puja in Trimbakeshwar"
         descriptions={[
-          "Narayan Nagbali is one of the most powerful and important rituals performed only at Trimbakeshwar Jyotirlinga. This puja is specially done to remove Pitru Dosh, Kaal Sarp negative effects, accidental death dosha, and ancestral karmic issues.",
+          "Narayan Nagbali is one of the most powerful and important rituals performed only at Trimbakeshwar Jyotirlinga. This puja is specially done to remove Pitra Dosh, Kaal Sarp negative effects, accidental death dosha, and ancestral karmic issues.",
           "Acharya Kartike Guru Ji is a highly experienced priest who performs the complete 3-day ritual with authentic Vedic methods.",
         ]}
         imageSrc="/narayan-nag-bali.png"
@@ -192,7 +192,7 @@ export default function NarayanNagBali() {
         title="What is Narayan Nagbali Puja?"
         descriptions={["Narayan Nagbali Puja is a combination of two rituals:"]}
         cardTitle="Narayan Bali & Nag Bali"
-        cardContent="Narayan Bali is performed to release the soul of ancestors, remove Pitru Dosh, and resolve unfinished karmas. Nag Bali is performed to get rid of doshas created by killing snakes (intentionally or unintentionally) and to neutralize negative planetary effects of Rahu–Ketu. These rituals help devotees overcome: sudden financial losses, family disputes, delayed marriage, health problems, business failures, recurring obstacles, emotional stress, and unseen negative energies. It is the only puja that directly addresses karmic and ancestral blockages."
+        cardContent="Narayan Bali is performed to release the soul of ancestors, remove Pitra Dosh, and resolve unfinished karmas. Nag Bali is performed to get rid of doshas created by killing snakes (intentionally or unintentionally) and to neutralize negative planetary effects of Rahu–Ketu. These rituals help devotees overcome: sudden financial losses, family disputes, delayed marriage, health problems, business failures, recurring obstacles, emotional stress, and unseen negative energies. It is the only puja that directly addresses karmic and ancestral blockages."
         imagePosition="right"
         textColor="#9B251E"
         accentColor="#FBDCAB"
