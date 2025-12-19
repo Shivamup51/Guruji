@@ -1,9 +1,16 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Menu, X, ChevronDown, ChevronUp, MessageCircle, Phone } from "lucide-react"
+import * as React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Menu,
+  X,
+  ChevronDown,
+  ChevronUp,
+  MessageCircle,
+  Phone,
+} from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,14 +18,14 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Button } from "@/components/ui/button"
-import { ScrollArea } from "@/components/ui/scroll-area"
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export function Navbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
-  const [isPoojaListOpen, setIsPoojaListOpen] = React.useState(false)
-  const [isDesktopPoojaOpen, setIsDesktopPoojaOpen] = React.useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [isPoojaListOpen, setIsPoojaListOpen] = React.useState(false);
+  const [isDesktopPoojaOpen, setIsDesktopPoojaOpen] = React.useState(false);
 
   const poojaList = [
     "Mahamrutunjay jaap",
@@ -30,13 +37,13 @@ export function Navbar() {
     "Narayan Nag Bali",
     "Tripindi",
     "Pitar dosh shanti",
-  ]
+  ];
 
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/contact-us", label: "Contact Us" },
-  ]
+  ];
 
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -44,7 +51,10 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <Link
+              href="/"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            >
               <Image
                 src="/logo.png"
                 alt="Shri Trimbakeshwar Logo"
@@ -53,7 +63,10 @@ export function Navbar() {
                 className="object-contain"
                 priority
               />
-              <span className="text-xl sm:text-2xl font-bold" style={{ color: "#9B251E" }}>
+              <span
+                className="text-xl sm:text-2xl font-bold"
+                style={{ color: "#9B251E" }}
+              >
                 Shri Trimbakeshwar
               </span>
             </Link>
@@ -72,7 +85,10 @@ export function Navbar() {
               </Link>
             ))}
             {/* Pooja List Dropdown - Desktop */}
-            <DropdownMenu open={isDesktopPoojaOpen} onOpenChange={setIsDesktopPoojaOpen}>
+            <DropdownMenu
+              open={isDesktopPoojaOpen}
+              onOpenChange={setIsDesktopPoojaOpen}
+            >
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="ghost"
@@ -177,8 +193,8 @@ export function Navbar() {
                           className="px-2 py-1 text-sm hover:opacity-80 transition-colors"
                           style={{ color: "#9B251E" }}
                           onClick={() => {
-                            setIsMobileMenuOpen(false)
-                            setIsPoojaListOpen(false)
+                            setIsMobileMenuOpen(false);
+                            setIsPoojaListOpen(false);
                           }}
                         >
                           {pooja}
@@ -190,7 +206,10 @@ export function Navbar() {
               </div>
               {/* CTA Button - Mobile */}
               <div className="px-2 pt-2">
-                <Link href="/contact-us" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link
+                  href="/contact-us"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   <Button
                     size="sm"
                     className="w-full text-sm font-semibold"
@@ -204,13 +223,13 @@ export function Navbar() {
               {/* WhatsApp Button - Mobile */}
               <div className="px-2 pt-2">
                 <a
-                  href={`https://wa.me/917888012103`}
+                  href={`https://wa.me/918208780240`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full px-4 py-2 rounded-md text-sm font-medium transition-colors bg-green-500 hover:bg-green-600 text-white"
                 >
                   <MessageCircle className="h-5 w-5" />
-                  WhatsApp: 7888012103
+                  WhatsApp: 8208780240
                 </a>
               </div>
             </div>
@@ -218,6 +237,5 @@ export function Navbar() {
         )}
       </div>
     </nav>
-  )
+  );
 }
-

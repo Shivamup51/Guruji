@@ -99,7 +99,7 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 font-semibold"
+                  className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 font-semibold transition-all duration-300 hover:opacity-90 active:scale-95 shadow-lg"
                   style={{
                     backgroundColor: "#9B251E",
                     color: "#FBDCAB",
@@ -110,7 +110,10 @@ export default function HeroSection() {
                   <span style={{ color: "#FBDCAB" }}>
                     {currentHero.ctaText}
                   </span>
-                  <span className="ml-2 text-xs sm:text-sm" style={{ color: "#FBDCAB" }}>
+                  <span
+                    className="ml-2 text-xs sm:text-sm"
+                    style={{ color: "#FBDCAB" }}
+                  >
                     ({currentHero.ctaTextEn})
                   </span>
                   <ArrowRight
@@ -121,38 +124,50 @@ export default function HeroSection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 font-semibold"
+                  className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 font-semibold transition-all duration-300 hover:bg-black/5 active:scale-95"
                   style={{
                     borderColor: "#9B251E",
                     color: "#9B251E",
                     backgroundColor: "#FBDCAB",
                     fontWeight: "600",
                   }}
-                  onClick={() => window.open("tel:+917888012103")}
+                  onClick={() => window.open("/contact-us", "_self")}
                 >
                   <Phone
                     className="h-4 w-4 sm:h-5 sm:w-5 mr-2"
                     style={{ color: "#9B251E" }}
                   />
-                  <span className="text-sm sm:text-base" style={{ color: "#9B251E" }}>+91 7888012103</span>
+                  <span
+                    className="text-sm sm:text-base"
+                    style={{ color: "#9B251E" }}
+                  >
+                    +91 8208780240
+                  </span>
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 font-semibold"
+                  className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 font-semibold transition-all duration-300 hover:bg-black/5 active:scale-95"
                   style={{
                     borderColor: "#9B251E",
                     color: "#9B251E",
                     backgroundColor: "#FBDCAB",
                     fontWeight: "600",
                   }}
-                  onClick={() => window.open("https://wa.me/917888012103", "_blank")}
+                  onClick={() =>
+                    window.open("https://wa.me/918208780240", "_blank")
+                  }
                 >
                   <MessageCircle
                     className="h-4 w-4 sm:h-5 sm:w-5 mr-2"
                     style={{ color: "#9B251E" }}
                   />
-                  <span className="text-sm sm:text-base" style={{ color: "#9B251E" }}>WhatsApp</span>
+                  <span
+                    className="text-sm sm:text-base"
+                    style={{ color: "#9B251E" }}
+                  >
+                    WhatsApp
+                  </span>
                 </Button>
               </div>
             </div>

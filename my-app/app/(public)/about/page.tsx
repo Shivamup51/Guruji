@@ -321,7 +321,7 @@ export default function About() {
                   className="text-lg px-8 py-6 border-2"
                   style={{ borderColor: "#9B251E", color: "#9B251E" }}
                   onClick={() =>
-                    window.open("https://wa.me/917888012103", "_blank")
+                    window.open("https://wa.me/918208780240", "_blank")
                   }
                 >
                   <MessageCircle className="h-5 w-5 mr-2" />
@@ -692,10 +692,10 @@ export default function About() {
               variant="outline"
               className="text-lg px-8 py-6 border-2"
               style={{ borderColor: "#9B251E", color: "#9B251E" }}
-              onClick={() => window.open("tel:+917888012103")}
+              onClick={() => window.open("tel:+918208780240")}
             >
               <Phone className="h-5 w-5 mr-2" />
-              Call: 7888012103
+              Call: 8208780240
             </Button>
           </div>
         </div>

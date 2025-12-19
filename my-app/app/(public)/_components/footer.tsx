@@ -1,8 +1,18 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Phone, MessageCircle, Mail, MapPin, Facebook, Instagram, Youtube, Twitter, ArrowRight } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Phone,
+  MessageCircle,
+  Mail,
+  MapPin,
+  Facebook,
+  Instagram,
+  Youtube,
+  Twitter,
+  ArrowRight,
+} from "lucide-react";
 
 const services = [
   { name: "Kaal Sarp Dosh Nivaran", href: "/kaal-sarp-dosh-niwaran" },
@@ -14,20 +24,20 @@ const services = [
   { name: "Yog Shanti Puja", href: "/yog-shanti" },
   { name: "Nakshatra Shanti", href: "/nakshatra-shanti" },
   { name: "Vastu Shanti Puja", href: "/vastu-shanti" },
-]
+];
 
 const quickLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Contact Us", href: "/contact-us" },
-]
+];
 
 const socialMedia = [
   { name: "Facebook", icon: Facebook, href: "#" },
   { name: "Instagram", icon: Instagram, href: "#" },
   { name: "YouTube", icon: Youtube, href: "#" },
   { name: "Twitter", icon: Twitter, href: "#" },
-]
+];
 
 export default function Footer() {
   return (
@@ -39,23 +49,47 @@ export default function Footer() {
             {/* Logo & Description */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="p-3 rounded-lg" style={{ backgroundColor: "#FBDCAB" }}>
-                  <span className="text-2xl font-bold" style={{ color: "#9B251E" }}>शिव</span>
+                <div
+                  className="p-3 rounded-lg"
+                  style={{ backgroundColor: "#FBDCAB" }}
+                >
+                  <span
+                    className="text-2xl font-bold"
+                    style={{ color: "#9B251E" }}
+                  >
+                    शिव
+                  </span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold" style={{ color: "#FBDCAB" }}>
+                  <h3
+                    className="text-xl font-bold"
+                    style={{ color: "#FBDCAB" }}
+                  >
                     Pandit Kartike Guru Ji
                   </h3>
-                  <p className="text-sm" style={{ color: "#FBDCAB", opacity: 0.9 }}>
+                  <p
+                    className="text-sm"
+                    style={{ color: "#FBDCAB", opacity: 0.9 }}
+                  >
                     त्र्यंबकेश्वर पंडित
                   </p>
                 </div>
               </div>
-              <p className="text-sm leading-relaxed" style={{ color: "#FBDCAB", opacity: 0.9 }}>
-                Authentic Vedic puja services at Trimbakeshwar Jyotirlinga. 20+ years of experience in performing traditional rituals with devotion and expertise.
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: "#FBDCAB", opacity: 0.9 }}
+              >
+                Authentic Vedic puja services at Trimbakeshwar Jyotirlinga. 20+
+                years of experience in performing traditional rituals with
+                devotion and expertise.
               </p>
-              <p className="text-xs leading-relaxed" style={{ color: "#FBDCAB", opacity: 0.8 }}>
-                त्र्यंबकेश्वर ज्योतिर्लिंग में प्रामाणिक वैदिक पूजा सेवाएं। 20+ वर्षों का अनुभव, भक्ति और विशेषज्ञता के साथ पारंपरिक अनुष्ठान करना।
+              <p
+                className="text-xs leading-relaxed"
+                style={{ color: "#FBDCAB", opacity: 0.8 }}
+              >
+                त्र्यंबकेश्वर ज्योतिर्लिंग में प्रामाणिक वैदिक पूजा सेवाएं। 20+
+                वर्षों का अनुभव, भक्ति और विशेषज्ञता के साथ पारंपरिक अनुष्ठान
+                करना।
               </p>
             </div>
 
@@ -63,7 +97,10 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-lg font-bold" style={{ color: "#FBDCAB" }}>
                 Quick Links
-                <span className="block text-sm font-normal mt-1" style={{ color: "#FBDCAB", opacity: 0.9 }}>
+                <span
+                  className="block text-sm font-normal mt-1"
+                  style={{ color: "#FBDCAB", opacity: 0.9 }}
+                >
                   त्वरित लिंक
                 </span>
               </h4>
@@ -87,7 +124,10 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-lg font-bold" style={{ color: "#FBDCAB" }}>
                 Our Services
-                <span className="block text-sm font-normal mt-1" style={{ color: "#FBDCAB", opacity: 0.9 }}>
+                <span
+                  className="block text-sm font-normal mt-1"
+                  style={{ color: "#FBDCAB", opacity: 0.9 }}
+                >
                   हमारी सेवाएं
                 </span>
               </h4>
@@ -111,45 +151,68 @@ export default function Footer() {
             <div className="space-y-4">
               <h4 className="text-lg font-bold" style={{ color: "#FBDCAB" }}>
                 Contact Us
-                <span className="block text-sm font-normal mt-1" style={{ color: "#FBDCAB", opacity: 0.9 }}>
+                <span
+                  className="block text-sm font-normal mt-1"
+                  style={{ color: "#FBDCAB", opacity: 0.9 }}
+                >
                   संपर्क करें
                 </span>
               </h4>
               <div className="space-y-3">
                 <a
-                  href="tel:+917888012103"
+                  href="tel:+918208780240"
                   className="flex items-center gap-3 text-sm hover:opacity-80 transition-opacity"
                   style={{ color: "#FBDCAB", opacity: 0.9 }}
                 >
-                  <div className="p-2 rounded-lg" style={{ backgroundColor: "#FBDCAB" }}>
+                  <div
+                    className="p-2 rounded-lg"
+                    style={{ backgroundColor: "#FBDCAB" }}
+                  >
                     <Phone className="h-4 w-4" style={{ color: "#9B251E" }} />
                   </div>
-                  <span>+91 7888012103</span>
+                  <span>+91 8208780240</span>
                 </a>
                 <a
-                  href="https://wa.me/917888012103"
+                  href="https://wa.me/918208780240"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-sm hover:opacity-80 transition-opacity"
                   style={{ color: "#FBDCAB", opacity: 0.9 }}
                 >
-                  <div className="p-2 rounded-lg" style={{ backgroundColor: "#FBDCAB" }}>
-                    <MessageCircle className="h-4 w-4" style={{ color: "#9B251E" }} />
+                  <div
+                    className="p-2 rounded-lg"
+                    style={{ backgroundColor: "#FBDCAB" }}
+                  >
+                    <MessageCircle
+                      className="h-4 w-4"
+                      style={{ color: "#9B251E" }}
+                    />
                   </div>
-                  <span>+91 7888012103</span>
+                  <span>+91 8208780240</span>
                 </a>
                 <a
                   href="mailto:Panditkartikeygurujitrambakesw@gmail.com"
                   className="flex items-center gap-3 text-sm hover:opacity-80 transition-opacity"
                   style={{ color: "#FBDCAB", opacity: 0.9 }}
                 >
-                  <div className="p-2 rounded-lg" style={{ backgroundColor: "#FBDCAB" }}>
+                  <div
+                    className="p-2 rounded-lg"
+                    style={{ backgroundColor: "#FBDCAB" }}
+                  >
                     <Mail className="h-4 w-4" style={{ color: "#9B251E" }} />
                   </div>
-                  <span className="break-all">Panditkartikeygurujitrambakesw@gmail.com</span>
+                  <span className="break-all">
+                    Panditkartikeygurujitrambakesw@gmail.com
+                  </span>
                 </a>
-                <div className="flex items-start gap-3 text-sm" style={{ color: "#FBDCAB", opacity: 0.9 }}>
-                  <div className="p-2 rounded-lg" style={{ backgroundColor: "#FBDCAB" }}>
+                <div
+                  className="flex items-start gap-3 text-sm"
+                  style={{ color: "#FBDCAB", opacity: 0.9 }}
+                >
+                  <div
+                    className="p-2 rounded-lg"
+                    style={{ backgroundColor: "#FBDCAB" }}
+                  >
                     <MapPin className="h-4 w-4" style={{ color: "#9B251E" }} />
                   </div>
                   <div>
@@ -162,13 +225,12 @@ export default function Footer() {
                 </div>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="pt-4 space-y-2">
+              <div className="pt-4 space-y-3">
                 <Button
                   size="sm"
-                  className="w-full text-sm font-semibold"
+                  className="w-full text-sm font-semibold transition-all duration-300 hover:opacity-90 active:scale-95 shadow-md"
                   style={{ backgroundColor: "#FBDCAB", color: "#9B251E" }}
-                  onClick={() => window.location.href = "/contact-us"}
+                  onClick={() => (window.location.href = "/contact-us")}
                 >
                   Book Puja Now
                   <span className="ml-1 text-xs">पूजा बुक करें</span>
@@ -176,12 +238,16 @@ export default function Footer() {
                 <Button
                   size="sm"
                   variant="outline"
-                  className="w-full text-sm font-semibold border-2"
-                  style={{ borderColor: "#FBDCAB", color: "#FBDCAB", backgroundColor: "transparent" }}
-                  onClick={() => window.open("tel:+917888012103")}
+                  className="w-full text-sm font-semibold border-2 transition-all duration-300 hover:bg-white/10 active:scale-95"
+                  style={{
+                    borderColor: "#FBDCAB",
+                    color: "#FBDCAB",
+                    backgroundColor: "transparent",
+                  }}
+                  onClick={() => (window.location.href = "/contact-us")}
                 >
                   <Phone className="h-4 w-4 mr-2" />
-                  Call Now
+                  Call Us
                 </Button>
               </div>
             </div>
@@ -190,17 +256,23 @@ export default function Footer() {
       </div>
 
       {/* Social Media & Copyright */}
-      <div className="border-t" style={{ borderColor: "rgba(251, 220, 171, 0.2)" }}>
+      <div
+        className="border-t"
+        style={{ borderColor: "rgba(251, 220, 171, 0.2)" }}
+      >
         <div className="px-4 sm:px-6 lg:px-8 py-6">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               {/* Social Media Icons */}
               <div className="flex items-center gap-4">
-                <span className="text-sm font-medium" style={{ color: "#FBDCAB", opacity: 0.9 }}>
+                <span
+                  className="text-sm font-medium"
+                  style={{ color: "#FBDCAB", opacity: 0.9 }}
+                >
                   Follow Us:
                 </span>
                 {socialMedia.map((social, index) => {
-                  const Icon = social.icon
+                  const Icon = social.icon;
                   return (
                     <a
                       key={index}
@@ -213,16 +285,23 @@ export default function Footer() {
                     >
                       <Icon className="h-5 w-5" style={{ color: "#9B251E" }} />
                     </a>
-                  )
+                  );
                 })}
               </div>
 
               {/* Copyright */}
               <div className="text-center md:text-right">
-                <p className="text-sm" style={{ color: "#FBDCAB", opacity: 0.8 }}>
-                  © {new Date().getFullYear()} Pandit Kartike Guru Ji. All rights reserved.
+                <p
+                  className="text-sm"
+                  style={{ color: "#FBDCAB", opacity: 0.8 }}
+                >
+                  © {new Date().getFullYear()} Pandit Kartike Guru Ji. All
+                  rights reserved.
                 </p>
-                <p className="text-xs mt-1" style={{ color: "#FBDCAB", opacity: 0.7 }}>
+                <p
+                  className="text-xs mt-1"
+                  style={{ color: "#FBDCAB", opacity: 0.7 }}
+                >
                   पंडित कार्तिके गुरु जी। सभी अधिकार सुरक्षित।
                 </p>
               </div>
@@ -231,6 +310,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
